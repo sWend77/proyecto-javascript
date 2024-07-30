@@ -50,23 +50,6 @@
 //     console.warn("El dato ingresado no es un numero. Intentelo nuevamente")
 // }
 
-const impuestoPais = x => x * 0.30;
-
-const iva = x => x * 0.21; 
-
-let precio = parseFloat(prompt("Ingrese el precio del producto: "));
-
-console.log ("El precio ingresado es de $" + precio)
-
-console.log ("El impuesto pais es de $"+ impuestoPais(precio))
-
-console.log("El iva es de $" + iva(precio)) 
-
-let precioTotal = x => precio + iva(precio) + impuestoPais(precio)
-
-console.log("El precio total con iva e impuesto pais incluido es de $" + precioTotal())
-
-
 
 
 
