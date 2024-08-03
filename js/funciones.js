@@ -22,6 +22,14 @@ while (precio != "exit") {
 
         break;
     
+    } else if (precio < 0){
+        
+        alert("No existen valores negativos para los precios. Inténtelo nuevamente.");
+        
+        console.warn("No existen valores negativos para los precios. Inténtelo nuevamente.");
+
+        break;
+    
     } else{ 
 
         console.log("El precio del producto es $" + precio);
@@ -43,7 +51,6 @@ while (precio != "exit") {
         precio = prompt("Ingrese un nuevo precio si desea continuar o escriba 'exit': ");
     }
 }
-
 
 if (precio == "exit"){
         
