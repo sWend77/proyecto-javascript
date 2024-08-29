@@ -35,7 +35,6 @@ footer{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .enlaces-principales{
@@ -45,7 +44,6 @@ footer{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .navbar {
@@ -78,7 +76,7 @@ a{
 
 .li-enlaces-principales{
     width: 45%;
-    height: 50%;
+    height: 25%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 10px;
 
