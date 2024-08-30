@@ -90,10 +90,6 @@ let h3Datos = document.querySelector("#h3-datos");
 
 let datosBusqueda = []
 
-// contenedorBuscador.addEventListener("submit" , (e) => {
-//     e.preventDefault();
-// });
-
 let formRegistroLogin = document.querySelector(".formulario-registro-login");
     
 let h3DatosRegistro = document.querySelector("#h3-datos-registro");
@@ -107,13 +103,32 @@ let password = document.getElementById("password");
 let resetpass = document.getElementById("resetpass");
 
 formRegistroLogin.addEventListener("submit", (e) => {
+    
     e.preventDefault();
+
+    const usernameStorage = nombreUsuario.value;
+
+    const emailStorage = email.value;
+
+    const passwordStorage = password.value;
+
+    localStorage.setItem("Nombre de usuario",usernameStorage);
+    
+    localStorage.setItem("Email",emailStorage);
+    
+    localStorage.setItem("Contraseña", passwordStorage);
+
+    localStorage.setItem("Repetir contraseña",resetPwStorage);
+    
     let usernameValue = nombreUsuario.value;
+    
     let emailValue = email.value;
+    
     let passwordValue = password.value;
-    let resetpassValue = resetpass.value;
-        
+    
+
     h3DatosRegistro.innerHTML = `
+        
         Nombre de usuario: ${usernameValue}<br>
         Correo electrónico: ${emailValue}<br>
         Contraseña: ${passwordValue}<br>
