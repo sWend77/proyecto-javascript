@@ -1,119 +1,119 @@
-let listaUsuarios = [];
+// let listaUsuarios = [];
 
-alert("Bienvenido a Gamedstore!")
+// alert("Bienvenido a Gamedstore!")
 
-alert("Registrese a continuacion...")
+// alert("Registrese a continuacion...")
 
-console.log("Bienvenido a Gamedstore!")
+// console.log("Bienvenido a Gamedstore!")
 
-console.log("Registrese a continuacion...")
+// console.log("Registrese a continuacion...")
 
-class Usuario {
+// class Usuario {
 
-    constructor(nombreCompleto, nombreUsuario, email, contrasenia, edad, direccion){
+//     constructor(nombreCompleto, nombreUsuario, email, contrasenia, edad, direccion){
         
-        this.nombreCompleto = nombreCompleto;
+//         this.nombreCompleto = nombreCompleto;
         
-        this.nombreUsuario = nombreUsuario;
+//         this.nombreUsuario = nombreUsuario;
         
-        this.email = email;
+//         this.email = email;
         
-        this.contrasenia = contrasenia;
+//         this.contrasenia = contrasenia;
         
-        this.edad = edad;
+//         this.edad = edad;
         
-        this.direccion = direccion;
-    };
-    chequeoRegistro(){
-        if (listaUsuarios.some(usuario => usuario.email === email)) {
+//         this.direccion = direccion;
+//     };
+//     chequeoRegistro(){
+//         if (listaUsuarios.some(usuario => usuario.email === email)) {
             
-            alert("El usuario con este correo electrónico ya está registrado.");
+//             alert("El usuario con este correo electrónico ya está registrado.");
             
-            return;
-        }
-    };
+//             return;
+//         }
+//     };
 
-}
-let registrarse = () => {
+// }
+// let registrarse = () => {
 
-    let nombreCompleto = prompt("Nombre completo: ");
+//     let nombreCompleto = prompt("Nombre completo: ");
     
-    let nombreUsuario = prompt("Nombre de usuario: ");
+//     let nombreUsuario = prompt("Nombre de usuario: ");
     
-    let email = prompt("Email: ");
+//     let email = prompt("Email: ");
     
-    let contrasenia = prompt("Contraseña: ");
+//     let contrasenia = prompt("Contraseña: ");
 
-    if (!nombreCompleto || !nombreUsuario || !email || !contrasenia) {
+//     if (!nombreCompleto || !nombreUsuario || !email || !contrasenia) {
         
-        alert("Todos los campos son obligatorios.");
+//         alert("Todos los campos son obligatorios.");
         
-        return;
-    }
+//         return;
+//     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
+//     const emailRegex = /^[^\s@]+@[^\s@]+.[^\s@]+$/;
     
-    if (!emailRegex.test(email)) {
+//     if (!emailRegex.test(email)) {
         
-        alert("Por favor, ingrese un email válido.");
+//         alert("Por favor, ingrese un email válido.");
         
-        return;
-    }
+//         return;
+//     }
 
-    if (contrasenia.length < 6) {
+//     if (contrasenia.length < 6) {
         
-        alert("La contraseña debe tener al menos 6 caracteres.");
+//         alert("La contraseña debe tener al menos 6 caracteres.");
         
-        return;
-    }
+//         return;
+//     }
 
-    let registrarUsuario = new Usuario(nombreCompleto, nombreUsuario, email, contrasenia);
+//     let registrarUsuario = new Usuario(nombreCompleto, nombreUsuario, email, contrasenia);
 
-    listaUsuarios.push(registrarUsuario);
+//     listaUsuarios.push(registrarUsuario);
 
-    alert("El usuario: " + registrarUsuario.nombreUsuario + " ha sido registrado exitosamente.");
+//     alert("El usuario: " + registrarUsuario.nombreUsuario + " ha sido registrado exitosamente.");
 
-    console.log("El usuario: " + registrarUsuario.nombreUsuario + " ha sido registrado exitosamente.");
-}
+//     console.log("El usuario: " + registrarUsuario.nombreUsuario + " ha sido registrado exitosamente.");
+// }
 
-registrarse()
+// registrarse()
 
-console.log(listaUsuarios)
+// console.log(listaUsuarios)
 
-alert("Ya es miembro de nuestra comunidad. Ahora inicie sesion a continuacion...")
+// alert("Ya es miembro de nuestra comunidad. Ahora inicie sesion a continuacion...")
 
-console.log("Ya es miembro de nuestra comunidad. Ahora inicie sesion a continuacion...")
+// console.log("Ya es miembro de nuestra comunidad. Ahora inicie sesion a continuacion...")
 
-let iniciarSesion = () =>{
+// let iniciarSesion = () =>{
 
-    let ingresarEmail = prompt("Email: ");
+//     let ingresarEmail = prompt("Email: ");
 
-    let contraseña = prompt("Contraseña: ");
+//     let contraseña = prompt("Contraseña: ");
 
-    if (!ingresarEmail || !contraseña) {
+//     if (!ingresarEmail || !contraseña) {
         
-        alert("Todos los campos son obligatorios.");
+//         alert("Todos los campos son obligatorios.");
         
-        return;
-    };
+//         return;
+//     };
 
-    let usuario = listaUsuarios.find(usuario => usuario.email === ingresarEmail);
+//     let usuario = listaUsuarios.find(usuario => usuario.email === ingresarEmail);
 
-    if (usuario && usuario.contrasenia === contraseña) {
+//     if (usuario && usuario.contrasenia === contraseña) {
         
-        alert("¡Bienvenido de nuevo, " + usuario.nombreUsuario + "! Sesion iniciada exitosamente.");
+//         alert("¡Bienvenido de nuevo, " + usuario.nombreUsuario + "! Sesion iniciada exitosamente.");
         
-        console.log("¡Bienvenido de nuevo, " + usuario.nombreUsuario + "! Sesion iniciada exitosamente.");
-    } else {
+//         console.log("¡Bienvenido de nuevo, " + usuario.nombreUsuario + "! Sesion iniciada exitosamente.");
+//     } else {
         
-        alert("Email o contraseña incorrectos. Por favor, inténtelo nuevamente.");
+//         alert("Email o contraseña incorrectos. Por favor, inténtelo nuevamente.");
         
-        console.log("Email o contraseña incorrectos. Por favor, inténtelo nuevamente.");
+//         console.log("Email o contraseña incorrectos. Por favor, inténtelo nuevamente.");
         
-        iniciarSesion();
+//         iniciarSesion();
 
-    };
+//     };
 
-}
+// }
 
-iniciarSesion();
+// iniciarSesion();
