@@ -38,29 +38,39 @@
         </div>
     </header>
     <main>
-<div class="titulo-formulario">
+        <div class="titulo-formulario">
             <h2>Quieres ser miembro de nuestra comunidad? </h2>
             <h2>Registrate a continuacion</h2>
         </div>
-        <div class="formulario">
+        <form class="formulario-registro-login">
             <p>
-                Correo electronico:
-                <input type="email" placeholder="example@gmail.com">
+                Nombre de usuario:
+                <input id="username" type="text" placeholder="example123">
+            </p>
+            <p>
+                Correo electrónico:
+                <input id="email" type="email" placeholder="example@gmail.com">
             </p>
             <p>
                 Contraseña: 
-                <input type="password" placeholder="*************">
+                <input id="password" type="password" placeholder="*************">
+            </p>
+            <p>
+                Repetir contraseña:
+                <input id="resetpass" type="password" placeholder="*************">
             </p>
             <button type="submit">Registrar</button>
-        </div>
+            <h3 id="h3-datos-registro"></h3>
+        </form>
     </main>
     <footer>
         <p>
             &copy; 2024 Gamedstore || Todos los derechos reservados &copy;
         </p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="/js/index.js"></script>
     <script src="/js/eventos.js"></script>
+    <script src="/js/storage.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- <script src="js/funciones.js"></script>
