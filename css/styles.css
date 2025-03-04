@@ -1,3 +1,5 @@
+/* --------------------------SECCION DE INICIO-------------------------------------------- */
+
 body{
     height: 100vh;
     background-image: url(https://www.muycomputer.com/wp-content/uploads/2018/09/steam-portada.jpg);
@@ -7,23 +9,31 @@ body{
 
 main{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background: rgb(22, 22, 22);
     border: solid 2px black;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
 footer{
     width: 100%;
-    height: 10%;
+    height: 20%;
     background: linear-gradient(to left, black 40%, rgb(36, 0, 136));
     border: solid 2px rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.logo-encabezado{
+    width: 70px;
+    height: 70px;
 }
 
 .mi-h1{
@@ -168,20 +178,311 @@ a{
 
 .contenedor-parrafo-index{
     width: 72%;
-    background: rgb(136, 136, 136);
+    height: 75%;
+    margin: 10px;
+    background: rgb(0, 0, 0);
+    border: solid 1px rgb(56, 56, 56);
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
+.titulo-index{
+    width: 100%;
+    height: 10%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: rgb(149, 165, 255);
+    text-decoration: underline;
+    background:rgb(0, 0, 0);
+    border: solid 1px rgb(0, 0, 0);
+    display: flex;
+    margin: 20px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .cont-parrafo{
+    width: 90%;
+    height: 60%;
+    background: rgb(0, 0, 0);
+    border: solid 1px violet;
+    
+} */
+
 .parrafo-index{
-    background:white;
+    width: 90%;
+    height: 80%;
+    padding: 0;
+    margin: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: normal;
+    background:rgb(0, 0, 0);
+    color: rgb(148, 148, 148);
+    white-space: pre-line;
+    display: flex;
+    flex-direction: column row;
+   
+}
+
+.cont-videos{
+    width: 23%;
+    height: 710px;
+    margin: 20px;
+    border: solid 1px rgb(56, 56, 56);
+    border-radius: 4px;
+}
+
+.trailer{
+    width: 80%;
+    height: 170px;
+    border: solid 1px rgb(159, 120, 175);
+    margin: 15px;
 }
 
 .mi-h2{
+    font-size: 22px;
+    display: flex;
+    color: white;
+    padding-left: 38px;
+}
+
+.videojuegos{
+    width: 100%;
+    height: 600px;
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videojuegos::-webkit-scrollbar {
+    width: 10px;
+}
+
+.videojuegos::-webkit-scrollbar-thumb {
+    background-color: #8b8b8b;
+    border-radius: 10px;
+}
+
+.videojuegos::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.videojuegos::-webkit-scrollbar-track {
+    background-color: #494949;
+    
+}
+
+.cont-1{    
+    width: 30%;
+    height: 100%;
+}
+
+.cont-redes{
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-redes{
+    font-size: 35px;
+    font-weight:600;
+}
+
+#logo-ig{
+    color: rgb(255, 164, 180);
+    border-radius: 4px;
+    
+}
+
+#logo-fb{
+    color: rgb(196, 202, 252);
+    border-radius: 4px;
+   
+}
+
+#logo-x{
+    color: rgb(131, 170, 255);
+    border-radius: 4px;
+    
+}
+
+.text-redes{
+    width: 100%;
+    height: 20px;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cont-2{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.marcas{
+    width: 90%;
+    height: 30%;
+    margin-bottom: 50px;
+    background: rgb(204, 204, 204);
+    border: solid 1px black;
+    border-radius: 4px;
+    
+}
+
+.cont-3{
+    width: 30%;
+    height: 100%;
+}
+
+.text-derechos{
+    margin: 20px;
+    font-size: 15px;
+    color: rgb(149, 165, 255);
+    display: flex;
+    margin-top: 150px ;
+    
+}
+
+.text-marcas{
+    margin: 15px;
+    font-size: 20px;
+    margin: 20px;
     color: white;
 }
 
-.formulario-registro-login{
-    background: grey;
+.cont-parrafo{
+    width: 100%;
+    height: 60%;
 }
+
+/* --------------------------SECCION DE REGISTRO-------------------------------------------- */
+
+.formulario-registro-login{
+    width: 60%;
+    height: 650px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo-formulario{
+    width: 40%;
+    color:rgb(208, 211, 255);
+    margin: 0 0 0 200px;
+    text-decoration: underline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.datos-form{
+    width: 70%;
+    margin-top: 50px;
+    color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.ingreso-datos{
+    width: 70%;
+    height: 30px;
+}
+
+.main-registro{
+    background-image:url(/img/fondoregistro.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+}
+
+.texto-form-registro-login{
+    color: white;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.boton-registro-login{
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    border: solid 2px violet;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -82,6 +82,37 @@ flechas.forEach((flecha) => {
     })
 });
 
+let intervalo;
+
+function iniciarCarruselAutomatico() {
+    intervalo = setInterval(() => {
+        indiceImagen = (indiceImagen === images.length - 1) ? 0 : indiceImagen + 1;
+        imgElemento.src = images[indiceImagen];
+    }, 2500); // Cambia la imagen cada 3 segundos
+}
+
+function detenerCarruselAutomatico() {
+    clearInterval(intervalo); // Detiene el carrusel automático
+}
+
+// Inicia el carrusel cuando se carga la página o en cualquier momento que desees
+iniciarCarruselAutomatico();
+
+// Si quieres que se detenga cuando el usuario interactúa (por ejemplo, al hacer clic en las flechas)
+flechaBack.addEventListener("click", () => {
+    indiceImagen = (indiceImagen === 0) ? images.length - 1 : indiceImagen - 1;
+    imgElemento.src = images[indiceImagen];
+    detenerCarruselAutomatico(); // Detiene el carrusel automático cuando el usuario hace clic
+    iniciarCarruselAutomatico(); // Reinicia el carrusel después de un clic
+});
+
+flechaNext.addEventListener("click", () => {
+    indiceImagen = (indiceImagen === images.length - 1) ? 0 : indiceImagen + 1;
+    imgElemento.src = images[indiceImagen];
+    detenerCarruselAutomatico(); // Detiene el carrusel automático cuando el usuario hace clic
+    iniciarCarruselAutomatico(); // Reinicia el carrusel después de un clic
+});
+
 let buscador = document.querySelector("#buscador");
 
 let contenedorBuscador = document.querySelector(".contenedor-buscador");

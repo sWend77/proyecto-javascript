@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro || Gamedstore</title>
+    <title>Registro - Gamedstore</title>
+    <link rel="icon" href="favicon.ico" id="favicon">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -11,7 +12,7 @@
         <nav class="navbar">
             <ul>
                 <div class="contenedor-h1">
-                    <a class="mi-h1" href="../index.html">Gamedstore</a>
+                    <a class="mi-h1" href="../index.html"><img src="/img/logo1.avif" alt="Logo-tienda" class="logo-encabezado">Gamedstore</a>
                 </div>
                 <div class="enlaces-principales">
                     <li class="li-enlaces-principales">
@@ -37,37 +38,72 @@
             <ion-icon class="flechas" id="flecha-next" name="chevron-forward-outline"></ion-icon>
         </div>
     </header>
-    <main>
+    <main class="main-registro">
         <div class="titulo-formulario">
             <h2>Quieres ser miembro de nuestra comunidad? </h2>
-            <h2>Registrate a continuacion</h2>
+            <h2>Registrese a continuacion!</h2>
         </div>
         <form class="formulario-registro-login">
-            <p>
-                Nombre de usuario:
-                <input id="username" type="text" placeholder="example123">
-            </p>
-            <p>
-                Correo electrónico:
-                <input id="email" type="email" placeholder="example@gmail.com">
-            </p>
-            <p>
-                Contraseña: 
-                <input id="password" type="password" placeholder="*************">
-            </p>
-            <p>
-                Repetir contraseña:
-                <input id="resetpass" type="password" placeholder="*************">
-            </p>
-            <button type="submit">Registrar</button>
+            <div class="datos-form">
+                <p class="texto-form-registro-login">
+                    Nombre de usuario:
+                </p>
+                <input class="ingreso-datos" id="username" type="text" placeholder="example123">
+            </div>
+            <div class="datos-form">
+                <p class="texto-form-registro-login">
+                    Correo electrónico:
+                </p>
+                <input class="ingreso-datos" id="email" type="email" placeholder="example@gmail.com">
+            </div>
+            <div class="datos-form">
+                <p class="texto-form-registro-login">
+                    Contraseña: 
+                </p>
+                <input class="ingreso-datos" id="password" type="password" placeholder="*************">
+            </div>
+            <div class="datos-form">
+                <p class="texto-form-registro-login">
+                    Repetir contraseña:
+                </p>
+                <input class="ingreso-datos" id="resetpass" type="password" placeholder="*************">
+            </div>
+            <button class="boton-registro-login" type="submit">Registrar</button>
             <h3 id="h3-datos-registro"></h3>
         </form>
     </main>
-    <footer>
-        <p>
-            &copy; 2024 Gamedstore || Todos los derechos reservados &copy;
-        </p>
+    <footer>    
+        <div class="cont-1">
+            <h3 class="text-redes">Siguenos en nuestras redes!</h3>
+            <div class="cont-redes">
+                <a class="logo-redes" id="logo-ig" target="_blank" href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="logo-redes" id="logo-fb" target="_blank"  href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a class="logo-redes" id="logo-x" target="_blank"  href="https://x.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+        <div class="cont-2">
+            <h3 class="text-marcas">Empresas mas buscadas</h3>
+            <div class="marcas">
+                <ion-icon class="flechas-footer" id="flecha-back" name="chevron-back-outline"></ion-icon>
+                <ion-icon class="flechas-footer" id="flecha-next" name="chevron-forward-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="cont-3">
+            <p class="text-derechos">
+                &copy; 2024 Gamedstore || Todos los derechos reservados &copy;
+            </p>
+        </div>
     </footer>
+    <script>
+        // Función para cambiar el favicon con JavaScript
+        function cambiarFavicon() {
+            var link = document.getElementById('favicon');
+            link.href = '/img/logo1.avif';  // Asegúrate de que esta ruta sea correcta
+        }
+
+        // Llamar a la función al cargar la página
+        window.onload = cambiarFavicon;
+    </script>
     <script src="/js/index.js"></script>
     <script src="/js/eventos.js"></script>
     <script src="/js/storage.js"></script>
